@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:ignore="MissingConstraints"
+    tools:context=".nav.Instructions">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/instructions_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="center"
+                android:text="Instructions and How To"
+                android:textColor="@color/Primary_Overlay2" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <ImageView
+                android:id="@+id/instructions_diagram"
+                android:layout_width="215dp"
+                android:layout_height="215dp"
+                tools:srcCompat="@drawable/pill"
+                android:contentDescription="TODO" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="Searching By Picture:"
+                android:textColor="@color/Primary_Overlay2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="When using picture search, please place the medication on a solid background with no other objects in the frame, similar to the diagram above."
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="How It Works:"
+                android:textColor="@color/Primary_Overlay2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="Using computer vision and machine learning software, our application can isolate the pill in your image, and identify the closest match based on the National Institute of Health's dataset on medication and pharmaceutical materials."
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="@string/warning"
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="left"
+                android:text="@string/disclaimer"
+                android:textColor="@color/error_disclaimer" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

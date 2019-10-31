@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tractine</string>
+    <string name="introductions_1">Getting better can be tough, disposing of your old medications shouldn\'t be.</string>
+    <string name="introductions_2">Tractine can help you identify and properly remove pharmaceuticals from your household.</string>
+    <string name="introductions_3">Take a picture with your camera to receive an explanation on medication type and disposal options.</string>
+    <string name="warning">Disclaimer: This system works with the FDA \and DEA websites, if unsure check your local ordinances as they may conflict with the information presented here.</string>
+
+    <string name="picture_search">Picture Search</string>
+    <string name="text_search">Text Search</string>
+    <string name="recents_option">Recents</string>
+    <string name="instructions_option">Instructions</string>
+
+    <string name="disclaimer">This product uses publicly available data from the U.S. National Library of Medicine (NLM), National Institutes of Health, Department of Health and Human Services; NLM is not responsible for the product and does not endorse or recommend this or any other product.</string>
+    <string name="recents">Recents</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="default_text">Click the menu above to get started!</string>
+</resources>

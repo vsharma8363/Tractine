@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:ignore="MissingConstraints"
+    tools:context=".Introduction">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/instruct_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="center"
+                android:text="@string/introductions_1"
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/instruct_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="center"
+                android:text="@string/introductions_2"
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/instruct_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="center"
+                android:text="@string/introductions_3"
+                android:textColor="@color/Primary_Overlay" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/disclaimer_warn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/voces"
+                android:gravity="center"
+                android:text="@string/disclaimer"
+                android:textColor="@color/error_disclaimer" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/instructions_redirect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Primary_Overlay"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:text="← Instructions" />
+
+                <TextView
+                    android:fontFamily="@font/voces"
+                    android:id="@+id/sep1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Primary_Overlay"
+                    android:text="|" />
+
+                <Button
+                    android:id="@+id/recents_redirect"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dataset"
+                    android:textColor="@color/Primary_Overlay" />
+
+                <TextView
+                    android:fontFamily="@font/voces"
+                    android:gravity="center"
+                    android:id="@+id/sep2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Primary_Overlay"
+                    android:text="|" />
+
+                <Button
+                    android:id="@+id/picture_redirect"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/voces"
+                    android:text="Pill Search →"
+                    android:textColor="@color/Primary_Overlay" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
