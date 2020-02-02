@@ -1,4 +1,4 @@
 include ':app'
 rootProject.name='Tractine'
-include ':java'
 include ':openCVLibrary'
+include ':java'

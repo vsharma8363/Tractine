@@ -1756,10 +1756,37 @@ public class Imgproc {
     // C++:  float cv::intersectConvexConvex(Mat _p1, Mat _p2, Mat& _p12, bool handleNested = true)
     //
 
+    /**
+     * Finds intersection of two convex polygons
+     *
+     * @param _p1 First polygon
+     * @param _p2 Second polygon
+     * @param _p12 Output polygon describing the intersecting area
+     * @param handleNested When true, an intersection is found if one of the polygons is fully enclosed in the other.
+     * When false, no intersection is found. If the polygons share a side or the vertex of one polygon lies on an edge
+     * of the other, they are not considered nested and an intersection will be found regardless of the value of handleNested.
+     *
+     * @return Absolute value of area of intersecting polygon
+     *
+     * <b>Note:</b> intersectConvexConvex doesn't confirm that both polygons are convex and will return invalid results if they aren't.
+     */
     public static float intersectConvexConvex(Mat _p1, Mat _p2, Mat _p12, boolean handleNested) {
         return intersectConvexConvex_0(_p1.nativeObj, _p2.nativeObj, _p12.nativeObj, handleNested);
     }
 
+    /**
+     * Finds intersection of two convex polygons
+     *
+     * @param _p1 First polygon
+     * @param _p2 Second polygon
+     * @param _p12 Output polygon describing the intersecting area
+     * When false, no intersection is found. If the polygons share a side or the vertex of one polygon lies on an edge
+     * of the other, they are not considered nested and an intersection will be found regardless of the value of handleNested.
+     *
+     * @return Absolute value of area of intersecting polygon
+     *
+     * <b>Note:</b> intersectConvexConvex doesn't confirm that both polygons are convex and will return invalid results if they aren't.
+     */
     public static float intersectConvexConvex(Mat _p1, Mat _p2, Mat _p12) {
         return intersectConvexConvex_1(_p1.nativeObj, _p2.nativeObj, _p12.nativeObj);
     }
